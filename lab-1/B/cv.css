@@ -1,0 +1,54 @@
+body {
+    background-color: rgb(255, 255, 255);
+  }
+  
+  h1 {
+    color: rgba(0, 0, 0, 0.945);
+    text-align: center;
+    border-style: solid;
+    border-color: black;
+    border-left:0ch;
+    border-right:0ch;
+    border-top:0ch;
+    
+  }
+  
+  p {
+    font-family: sans-serif;
+    color: rgba(0, 0, 0, 0.945);
+    font-size: 20px;
+    text-align: left;
+	position: center;
+  }
+.bio{
+    float: left;
+    text-align: center;
+    
+
+}
+.Photo{
+    float:inline-end;
+
+}
+
+.list{
+    float:inline-start;
+    text-align: left;
+    size: 40px;
+    font-family: sans-serif;
+    color: rgba(0, 0, 0, 0.945);
+}
+th,td{
+    border-style: solid;
+    width: 100%;
+    border-collapse: separate;
+}
+.end{
+    float: inline-start;
+    text-align: left;
+    size: 40px;
+    font-family: sans-serif;
+    color: rgba(0, 0, 0, 0.945);
+    margin-top: 20px;
+    padding-top: 20px;
+}
