@@ -1,4 +1,17 @@
-a:link { text-decoration: none; }
+a:link { text-decoration: none; 
+	color:black; }
 .box1{
+	position:absolute;
 	text-align:center;
+	margin-left:220px;
+	color:black;
+}
+body{
+	 margin-top: 25px;
+  margin-bottom: 100px;
+  margin-right: 150px;
+  margin-left: 180px;
+  background-color:rgb(230, 230, 230);
+  font-family:serif;
+  
 }
