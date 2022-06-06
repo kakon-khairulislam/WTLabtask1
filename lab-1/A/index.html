@@ -9,12 +9,12 @@
 </head>
 <body>
   <form> 
-<div class = "text" > <label style = "color:red;">* </label>- Denotes Required Information</div></br>
-<div class = "nav">
+<div class = "nav" > <label style = "color:red;">* </label>- Denotes Required Information </br>
+<div >
 <a href= "" > <b>> 1 Donation </b>  </a>
 <a href= "" >  > 2 confirmation  </a>
 <a href= "" > > Thank You!  </a> </div>
-<p style = "color:red; font-size:25px;" > <b> Donor Information</b></p>
+<p style = "color:red; font-size:25px;margin-bottom: 0;" > <b> Donor Information</b></p>
 
 
     <div class = "box1">
@@ -66,13 +66,71 @@
   <p style="margin-block-start: 0em;margin-block-end: 0em;text-align: left;padding-left: 50px; ">(check if okay)</p> 
   <p style="margin-block-start: 0em;margin-block-end: 0em; text-align:right; ">
     Monthly Credit Card $   <input type="text" id="uk" name="uk" size="3"> for  <input type="text" id="number" name="number"size="3"> months</p>
+    
+   
+  </div>
+ <div class="second"> <p style = "color:red; font-size:25px;  " > <b>  Honorarium and Memorial Donation Information</b></p></div>
+ <div class = "box2">
+<span style="float:left ;"><b>I would like to make this donation</b> </span>
+<span style="float:right;" >
+  <input type="radio" id="to honor" name="to honor" value="inhonor">
+  <label for="to honor">to honor</label><br>
+  <input type="radio" id="in memory of" name="inmemory of" value="inmemoryof">
+  <label for="in memory of">in memory of</label>
+ </span>
+ </div>
+ <div class="box2a"> 
+  <b> Name : </b> </label> <input type="text" id="name" name="name"><br><br>
+  <b> acknowledge donation to : </b> </label> <input type="text" id="acg" name="acg"><br><br>
+  <b> Address : </b> </label> <input type="text" id="adr3" name="adr3"><br><br>
+  <b>State </b> <input type="text" list="state" placeholder="Select an option" /><br><br>
+<datalist id="state">
+    <option value="Dhaka">
+    <option value="Mymensingh">
+    <option value="sylhet">
+    <option value="Chittagong"><option value="Rajshahi">
+    <option value="Barishal">
+    <option value="Rangpur">
+  </datalist>
+  <b> Address : </b> </label> <input type="text" id="zip" name="zip"><br><br> 
+</div>
+<div class="third"> <p style = "color:red; font-size:25px;  " > <b> Additional Information</b></p>
+<p>Please enter your name, company or organization as you would like it to apear in our publications</p>
+<span style="padding-left: 280px;bottom: 0px;;">
+  <b> Name : </b> </label> <input type="text" id="name" name="name"><br><br>
+</span>
+<input type="checkbox" id="ad1" name="one"> I would like my gift to remain anonymous. <br>
+<input type="checkbox" id="ad2" name="two"> My employer offers a matching gift program. I will mail the matching gift form. <br>
+<input type="checkbox" id="ad3" name="three">Please save the cost of acknowledging this gift by not mailing a thank you letter. <br>
+<span style="text-align: center;padding-left: 200px;"><b>Comments</b><br> (please type any quesstion or comment here)</span>
+<span style="padding-left: 50px;bottom: 0px"><textarea name="com" id="1" cols="20" rows="3"></textarea></span> 
+<div class = "box3a">
+  <span style="float:left ;"><b>how may we contact you</b> </span>
+  <span style="float:right;" >
+    <input type="radio" id="email" name="e1" value="Email">
+    <label for="email">email</label><br>
+    <input type="radio" id="postal mail" name="postal mail" value="postal mail">
+    <label for="postal mail">postal mail</label><br>
+    <input type="radio" id="telephone" name="telephone" value="telephone">
+    <label for="telephone">telephone</label><br>
+    <input type="radio" id="fax" name="fax" value="fax">
+    <label for="fax">fax</label><br>
+    
+   </span>
+   </div>
+  <div class="box3b">
+    <span style="text-align: left;">I would like to receive newsteller and special events by:</span><br>
+    <input type="radio" id="email" name="e1" value="Email">
+    <label for="email">email</label><br>
+    <input type="radio" id="postal mail" name="postal mail" value="postal mail">
+    <label for="postal mail">postal mail</label><br>
+    <span style="left: 0;"><input type="checkbox" id="ad1" name="one">  I would like information about volunteering with the community</span> <br><br>
+  <input style="border-radius: 20px ;"type="reset" name="reset" id="reset">
+   <input style="border-radius: 20px" type="submit" name = "continue " id = "continue" value="continue"> <br>
+   <p>Donate Online with confidence. You are on a secure server.</p>
+   <p>If you have any problems or quesstions, please contact <a href="">support</a> </p>
+  </div>
+  
 </div>
 </form>
-
-
-
-
-
-
-
 </body>
