@@ -39,7 +39,14 @@ $name = $email =$dob = "";
   }else{
     if(strlen($name)<=2) {
     echo "Name should be higher than two words";
-  } else{echo " welcome $name";}
+  } else{
+    if(preg_match("/[^0-9a-zA-Z-]/",$name)){
+      echo " welcome $name";
+    }
+    else{
+      echo "Wrong pattern in writing name";
+    }
+    }
     
   }
 }
