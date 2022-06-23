@@ -3,39 +3,72 @@
     left: 50px;
     border-style:solid ;
     border-width: 1;
-    padding-bottom: 70px;
-    margin-left: 250px;
-    margin-right: 250px;
+    padding-bottom: 30px;
+    margin-left: 300px;
+    margin-right: 300px;
 }
 .two{
     text-align: center;
     left: 50px;
     border-style:solid ;
     border-width: 1;
-    padding-bottom: 70px;
-    margin-left: 250px;
-    margin-right: 250px;
+    padding-bottom: 30px;
+    margin-left: 300px;
+    margin-right: 300px;;
 }
 .three{
     text-align: center;
     left: 50px;
     border-style:solid ;
     border-width: 1;
-    padding-bottom: 75px;
-    margin-left: 250px;
-    margin-right: 250px;
+    padding-bottom: 30px;
+    margin-left: 300px;
+    margin-right: 300px;
+}
+.four{
+    text-align: center;
+    left: 50px;
+    border-style:solid ;
+    border-width: 1;
+    padding-bottom: 30px;
+    margin-left: 300px;
+    margin-right: 300px;
+}
+.five{
+    text-align: center;
+    left: 50px;
+    border-style:solid ;
+    border-width: 1;
+    padding-bottom: 30px;
+    margin-left: 300px;
+    margin-right: 300px;
+}
+.six{
+    text-align: center;
+    left: 50px;
+    border-style:solid ;
+    border-width: 1;
+    padding-bottom: 30px;
+    margin-left: 300px;
+    margin-right: 300px;
 }
 #sub{
-  position: fixed;
-  left: 700px;
-  top: 570px;
-  font-size: x-large;
-  background-color: white;
-  color: black;
-  border: 2px solid red;
+    text-align: center;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    padding-top: 2px;
+    padding-bottom: 2px;
+    margin-left: 247px;
+    margin-right: 247px;
+    font-size: x-large;
+    background-color: white;
+    color: black;
+    border: 2px solid red;
 
 
 }
 body{
     margin: 5px;
+    top: 10px;
+    
 }
