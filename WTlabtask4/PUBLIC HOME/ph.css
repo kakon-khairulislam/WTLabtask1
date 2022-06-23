@@ -1,0 +1,26 @@
+body{
+    margin-left: 300px;
+    margin-right: 300px;
+    padding: 50px;  
+}label{
+    color: green;
+    font-size: xx-large;
+}.left{
+    text-align: left;
+}
+.right{
+    text-align: right;
+}
+.one{
+    padding :20px;
+    border-style: solid;
+    border-width: 1px;
+}
+
+.end{ 
+    margin-top: 250px;
+    border-style: solid;
+    border-width: 1px;
+    text-align: center;
+    
+}

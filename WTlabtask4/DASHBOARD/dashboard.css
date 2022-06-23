@@ -1,0 +1,37 @@
+body{
+    margin-left: 300px;
+    margin-right: 300px;
+    padding: 50px;  
+}label{
+    color: green;
+    font-size: xx-large;
+}.left{
+    text-align: left;
+}
+.right{
+    text-align: right;
+}
+.one{
+    padding :20px;
+    border-style: solid;
+    border-width: 1px;
+}
+nav{
+    display: inline;
+    float: left;
+    border-style: solid;
+    border-width: 1px;
+}
+#wc{
+    display:block;
+    float: right;
+    text-align: right;
+    padding-right: 380px;
+}
+.end{ 
+    margin-top: 200px;
+    border-style: solid;
+    border-width: 1px;
+    text-align: center;
+    
+}
