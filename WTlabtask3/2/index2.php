@@ -8,11 +8,17 @@
 </head>
 <body>
     <b>Change Password</b> <br><br>
-    <div>
-        Current Password : <input type="number" name="CP" id="1"> <br> <br>
-        New Password : <input type="number" name="NP" id="2"><br><br>
-        Retype Password : <input type="number" name="RP" id="3"><br> <hr>
-    </div>
-    <input type="submit"name = "submit">
+   
+        <form action="login2.php"method= "POST">
+    <?php if (isset($_GET['error'])) { ?>
+    <p class="error"><?php echo $_GET['error']; ?></p>
+    <?php } ?>
+        Current Password : <input type="pass" name="CP" id="1"> <br> <br>
+        New Password : <input type="pass" name="NP" id="2"><br><br>
+        Retype Password : <input type="pass" name="RP" id="3"><br> <hr>
+     <input type="submit"name = "submit">
+    </form>
+
+   
 </body>
 </html>
