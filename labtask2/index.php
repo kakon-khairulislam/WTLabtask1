@@ -32,10 +32,10 @@
       </div>
       <div class="five">
         <h1>Degree :</h1>
-        <input type="checkbox" name="deg1" id= "dr1" Value ="ssc" /> SSC
-        <input type="checkbox" name="deg2" id= "dr2"Value ="hsc" /> HSC
-        <input type="checkbox" name="deg3" id= "dr3"Value ="Msc" /> MSc
-        <input type="checkbox" name="deg4" id= "dr4" Value ="Bsc"/> BSc
+        <input type="checkbox" name="degree[]"  Value ="SSC" /> SSC
+        <input type="checkbox" name="degree[]" Value ="HSC" /> HSC
+        <input type="checkbox" name="degree[]" Value ="MSc" /> MSc
+        <input type="checkbox" name="degree[]"  Value ="BSc"/> BSc
       </div>
       <div class="six">
         <h1>Your Blood Group :</h1>
@@ -58,7 +58,7 @@
     
     <?php
 if ($_SERVER["REQUEST_METHOD"] == "POST") {
-$name = $email =$dob = $YG =$deg= $blood= "";
+$name = $email =$dob = $YG = $blood= "";
   if(isset($_POST['submit'])){
     $name = $_POST['name'];
     $email = $_POST['email'];
@@ -97,40 +97,44 @@ $name = $email =$dob = $YG =$deg= $blood= "";
     }
     }
     
-   
+ 
   if(isset($_REQUEST['YG'])){
     echo " <br/>Your Gender is :",$_REQUEST['YG'];
   }else{
-    echo "<br/>You haven't Provide Your <b>Gender</b>";
-  }
-
-
-  if(empty ($_POST['checkbox'])){
-    echo "<br/>You haven't Provide Your <b>Degree</b>";
-  }else{
-    if (strlen($_POST['checkbox'])<2){
-      echo "Please choose Two Degree at least ";
+    if (!empty($_REQUEST['YG'])){
+      
     }
     else{
-       
+      echo "<br/>You haven't Provide Your <b>Gender</b>";
     }
+    
   }
- if(isset($_REQUEST['deg1'])){
-    echo " <br/>Your Degree/Degrees :",$_REQUEST['deg1'];
-  } if(isset($_REQUEST['deg2'])){
-    echo " <br/>Your Degree/Degrees :",$_REQUEST['deg2'];
-  } if(isset($_REQUEST['deg3'])){
-    echo " <br/>Your Degree/Degrees :",$_REQUEST['deg3'];
-  } if(isset($_REQUEST['deg4'])){
-    echo " <br/>Your Degree/Degrees :",$_REQUEST['deg4'];
+  
+  $checking = 0;
+  if(!empty($_POST['degree'])){
+    $checking = count($_POST['degree']);
+    if($checking <=1){
+      echo "<br/>Please Provide at least two <b>Degree</b>";
+    }
+    else{
+      echo "<br/>your provided degrees are : ";
+      foreach($_POST["degree"] as $degree){
+        echo $degree," ";
+      }
+    }
+  }else{
+    echo "<br/>You haven't Provide Your <b>Degree</b>";
   }
+
+
 
 
   if (empty($_REQUEST['blood'])){echo "<br/>You haven't Provide Your <b>Blood Group</b>";}
   else{
   if(isset($_REQUEST['blood'])){
     echo "<br/>Your Blood Group is :" ,$_REQUEST['blood'];
-  }}
+  }
+}
  
 
 ?>
