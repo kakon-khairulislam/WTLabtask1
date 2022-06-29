@@ -10,8 +10,11 @@
     <form action="upload.php" method= "POST" class="form" enctype="multipart/form-data">
         <h1>Profile Picture</h1>
         <img src="user.jpg" alt="user"><br>
-        <input type="file" name = "pic" id="b1"><hr>
+        <input type="file" name = "file" id="b1"><hr>
         <input type="submit" name = "submit">
+    <?php if (isset($_GET['error'])) { ?>
+    <p class="error"><?php echo $_GET['error']; ?></p>
+    <?php } ?>
     </form>
 </body>
 </html>
