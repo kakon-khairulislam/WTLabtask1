@@ -73,7 +73,7 @@ $name = $email =$dob = $YG = $blood= "";
     if(strlen($name)<=2) {
     echo "Name should be higher than two words";
   } else{
-    if(preg_match("/[^0-9a-zA-Z]/",$name)){
+    if(preg_match("/^[a-zA-Z\s\._]+$/",$name)){
       echo " welcome $name";
     } else{
       echo "Wrong pattern in writing <b>Name</b>";
@@ -83,13 +83,15 @@ $name = $email =$dob = $YG = $blood= "";
       echo "</br>You haven't provide your <b>Email</b>";
     }
     else {
-      if (!filter_var($email, FILTER_VALIDATE_EMAIL)) {
-        echo "</br>Wrong pattern in writing <b> Email</b>";
+      if (preg_match("/^[a-zA-Z\d\._]+@[a-zA-Z\d\._]+[\.][a-zA-Z\d\._]+$/",$email)) {
+         echo "<br>Your Email is : $email";
       }
       else {
-        echo "<br>Your Email is : $email";
+      echo "</br>Wrong pattern in writing <b> Email</b>";
       }
     }
+
+
     if(empty($dob)){
       echo "</br>You haven't Provide <b>Date of Birth</b>";
     }else{
@@ -98,17 +100,15 @@ $name = $email =$dob = $YG = $blood= "";
     }
     
  
-  if(isset($_REQUEST['YG'])){
-    echo " <br/>Your Gender is :",$_REQUEST['YG'];
-  }else{
     if (!empty($_REQUEST['YG'])){
-      
+      if(isset($_REQUEST['YG'])){
+       echo " <br/>Your Gender is :",$_REQUEST['YG'];
     }
-    else{
+    } else{
       echo "<br/>You haven't Provide Your <b>Gender</b>";
     }
     
-  }
+  
   
   $checking = 0;
   if(!empty($_POST['degree'])){
