@@ -19,15 +19,15 @@ if(empty($name)){
     exit();
     } else{
         if(preg_match("/^[a-zA-Z\s\._]+$/",$name)){
-            if(file_exists('form_data.json')){
-                $present_data= file_get_contents('form_data.json');
+            if(file_exists('data.json')){
+                $present_data= file_get_contents('data.json');
                 $array_data = json_decode($present_data,true);
                 $extra = array(
                     'name' => $_POST['name']
                 ) ;
                 $array_data[]= $extra;
                 $final_data = json_encode($array_data);
-                if(file_put_contents('form_data.json',$final_data)){
+                if(file_put_contents('data.json',$final_data)){
                     echo "Name Appended successfully";
                 }}
         }else{
@@ -40,15 +40,15 @@ if(empty($email)){
     exit();
 }else{
     if (preg_match("/^[a-zA-Z\d\._]+@[a-zA-Z\d\._]+[\.][a-zA-Z\d\._]+$/",$email)) {
-        if(file_exists('form_data.json')){
-            $present_data= file_get_contents('form_data.json');
+        if(file_exists('data.json')){
+            $present_data= file_get_contents('data.json');
             $array_data = json_decode($present_data,true);
             $extra = array(
                 'email' => $_POST['email']
             ) ;
             $array_data[]= $extra;
             $final_data = json_encode($array_data);
-            if(file_put_contents('form_data.json',$final_data)){
+            if(file_put_contents('data.json',$final_data)){
                 echo "<br/>email Appended successfully";
             }}
      }
@@ -66,15 +66,15 @@ if(empty($username)){
     exit();
     } else{
         if(preg_match("/^[a-zA-Z\s\._]+$/",$username)){
-            if(file_exists('form_data.json')){
-                $present_data= file_get_contents('form_data.json');
+            if(file_exists('data.json')){
+                $present_data= file_get_contents('data.json');
                 $array_data = json_decode($present_data,true);
                 $extra = array(
                     'username' => $_POST['un']
                 ) ;
                 $array_data[]= $extra;
                 $final_data = json_encode($array_data);
-                if(file_put_contents('form_data.json',$final_data)){
+                if(file_put_contents('data.json',$final_data)){
                     echo "<br/>Username Appended successfully";
                 }}
         }else{
@@ -100,15 +100,15 @@ if(empty($confirmation)){
     exit();
 }else{
   if($password==$confirmation){
-    if(file_exists('form_data.json')){
-        $present_data= file_get_contents('form_data.json');
+    if(file_exists('data.json')){
+        $present_data= file_get_contents('data.json');
         $array_data = json_decode($present_data,true);
         $extra = array(
             'password' => $_POST['cpw']
         ) ;
         $array_data[]= $extra;
         $final_data = json_encode($array_data);
-        if(file_put_contents('form_data.json',$final_data)){
+        if(file_put_contents('data.json',$final_data)){
             echo "<br/>Password Appended successfully";
         }}
   }
@@ -120,15 +120,15 @@ else{
 
 if (!empty($_REQUEST['YG'])){
     if(isset($_REQUEST['YG'])){
-            if(file_exists('form_data.json')){
-                $present_data= file_get_contents('form_data.json');
+            if(file_exists('data.json')){
+                $present_data= file_get_contents('data.json');
                 $array_data = json_decode($present_data,true);
                 $extra = array(
                     'Gender' => $_POST['YG']
                 ) ;
                 $array_data[]= $extra;
                 $final_data = json_encode($array_data);
-                if(file_put_contents('form_data.json',$final_data)){
+                if(file_put_contents('data.json',$final_data)){
                     echo "<br/>Gender Appended successfully";
                 }
         }
@@ -158,8 +158,8 @@ if (!empty($_REQUEST['YG'])){
         if($d>>0 && $d<=31){
         if($m>>0 && $m<=12){
         if($y>=1971 && $y<=2002){
-            if(file_exists('form_data.json')){
-            $present_data= file_get_contents('form_data.json');
+            if(file_exists('data.json')){
+            $present_data= file_get_contents('data.json');
             $array_data = json_decode($present_data,true);
             $extra = array(
                 'Date of Birth' => $_POST['date'],
@@ -168,7 +168,7 @@ if (!empty($_REQUEST['YG'])){
             ) ;
             $array_data[]= $extra;
             $final_data = json_encode($array_data);
-            if(file_put_contents('form_data.json',$final_data)){
+            if(file_put_contents('data.json',$final_data)){
                 echo "<br/>Date of Birth Appended successfully";
             }
         }}else{
