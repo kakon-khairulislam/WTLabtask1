@@ -18,10 +18,13 @@
   <input type="text" id="buyingprice" name="buyingprice"><br>
   <label for="sellingprice">selling Price:</label><br>
   <input type="text" id="sellingprice" name="sellingprice"><br>
+  <label for="profit">Profit:</label><br>
+  <input type="text" id = "profit" name ="profit"><br>
 
 
   <input type="submit" name = "createProduct" value="Create">
   <input type="reset"> 
+  <input type="radio">Display?
 </form> 
 
 </body>
