@@ -1,0 +1,11 @@
+body{
+    margin: 30px;
+    padding: 15px;
+}
+#reg,#log{
+ font-size: larger;
+ color: rgb(234, 0, 255);
+ text-decoration: none;
+ top: 200px;
+ left:200px;
+}
