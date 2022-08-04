@@ -1,5 +1,6 @@
+<?php include 'checksession.php';?>
 <?php 
-session_start();
+
     $name = $email = " ";
     $nameErr = $emailErr = " " ;
 if($_SERVER["REQUEST_METHOD"] == "POST"){
