@@ -1,4 +1,4 @@
-
+<?php include 'checksession.php';?>
 <!DOCTYPE html>
 <html>
 <head>
@@ -12,7 +12,7 @@
     
 <div style ="margin-top: 0px; position: absolute;right: 80px;top:55px;text-decoration: none;border-style: solid;border-width: 1.5px; border-color: red;">
     <a href=><b style = "color:white;font-size:25px; font-family:Arial;"><?php
-					session_start();
+					
 					if(isset($_SESSION['name'])){
 						echo "Welcome ".$_SESSION['user'];
 						
