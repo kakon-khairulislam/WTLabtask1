@@ -45,7 +45,7 @@
 								
 
 								if(isset($_POST['remember_me']) && $_POST['remember_me'] == 'remembered'){
-									setrawcookie('user', base64_encode(json_encode($value['user'])));
+									setcookie('user', base64_encode(json_encode($value['username'])),time()+3600,'/');
 								}
 								header("Location: User_account.php");
 							}else{
@@ -60,7 +60,7 @@
 						
 						
 						
-
+		
 					}
 			
 
@@ -104,15 +104,15 @@
 					
 					<label>User Name: </label>
 					<input type="text" name="user_name" value="<?php echo $userName;?>">
-					<span class="red"><?php echo $userName_Err?></span> <br><hr>
+					<span style="color:red"><?php echo $userName_Err?></span> <br><hr>
 				
 
 					
 						<label>Password: </label>
 						<input type="password" name="password" value="<?php echo $pass;?>">
-						<span class="red"><?php echo $pass_Err?></span><br><hr>
+						<span style="color:red"><?php echo $pass_Err?></span><br><hr>
 					
-				<input type="checkbox" name="remember_me" value="remembered">Remember me<br><br>
+				<input type="checkbox" name="remember_me" value="remembered">Remember me <a href="forget.php">Forgot Password?</a><br><br>
 				<input type="submit" name="submission" value="submit">	
 		</form>
 
