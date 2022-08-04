@@ -1,3 +1,4 @@
+<?php include 'checksession.php';?>
 <!DOCTYPE html>
 <html>
 <head>
@@ -10,9 +11,10 @@
     <p style = "font-size:40px; font-family:Arial;margin-bottom: 0px;margin-top:3px">Dashboard</p><br><br>
     
 <div style ="margin-top: 0px; position: absolute;right: 80px;top:55px;text-decoration: none;border-style: solid;border-width: 1.5px; border-color: red;">
-    <a href=><b style = "color:white;font-size:25px; font-family:Arial;"><?php
-					session_start();
-					if(isset($_SESSION['name'])){
+    <a href=><b style = "color:white;font-size:25px; font-family:Arial;">
+	<?php
+					
+					if(isset($_SESSION['user'])){
 						echo "Welcome ".$_SESSION['user'];
 						
 					}
