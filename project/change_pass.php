@@ -1,4 +1,4 @@
-
+<?php include 'checksession.php';?>
 <!DOCTYPE html>
 <html>
 <head>
@@ -7,7 +7,7 @@
 </head>
 <body >
 	<?php 
-    session_start();
+    
     $curr_pass = $new_pass = $re_new_pass = "";
 	$curr_pass_Err = $new_pass_Err = $re_new_pass_Err = $pass_mismatch_Err = $same_prev_pass_Err = "";
 
@@ -39,6 +39,7 @@
 		else{
 			$re_new_pass = $_POST['re_new_pass'];
 		}
+		if($new_pass==$re_new_pass){
 		if (!$errorFlag) {
 			$users = json_decode(file_get_contents('users.json'),true);
 
@@ -65,7 +66,7 @@
 				}
 			}
 		}
-	}
+	}}
 	?>
 
 
