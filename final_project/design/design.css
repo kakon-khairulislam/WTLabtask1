@@ -1,0 +1,135 @@
+body{
+    margin-left: 20px;
+    margin-right: 20px;
+    color: aqua;
+}
+nav{
+    background-color: rgba(36, 1, 91, 0.985);
+}
+.nav1{
+    background-color: rgb(255, 255, 255);
+    overflow: hidden;
+    margin-left: 350px;
+    margin-right: 250px;
+}
+.nav1 a {
+    margin-left: 100px;
+    
+  color: rgb(0, 0, 0);
+  text-align: center;
+  
+  text-decoration: none;
+  ;
+  font-weight: bold;
+  
+}
+.nav2 .nav2a{
+    background-color: rgba(255, 255, 255, 0.985);
+    font-size: 25px;
+    font-family: arial;
+    text-align: center;
+    text-decoration: none;
+  
+    margin-right: 1220px;
+    margin-left: 20px;
+    padding-top: 75px;
+    padding-bottom: 75px;
+    font-weight:200;
+    
+    
+    
+}
+.nav3{
+color: black;
+font-weight:bolder;
+
+font-family:'Gill Sans', 'Gill Sans MT' 'Trebuchet MS', sans-serif;
+position: absolute;
+top: 180px;
+left: 450px;
+right:356px;
+}
+.nav4{
+    color: black;
+    font-weight:bolder;
+    
+    font-family:'Gill Sans', 'Gill Sans MT' 'Trebuchet MS', sans-serif;
+    position: absolute;
+    top: 450px;
+    left: 450px;
+    right:356px;
+    }
+footer{
+    font-size: 17px;
+    background-color: rgba(36, 1, 91, 0.985);
+    text-align: center;
+    color: aliceblue; 
+    height: 30px;
+    bottom: 0px;
+    font-weight: 100;
+
+}
+.reg{
+    position: absolute;
+    margin-top: 50px;
+    margin-bottom: 50px;
+    text-align: center;
+    left: 430px;
+    right:370px;
+    font-weight: 100;
+    color:black;
+    border-style: solid;border-width: 1.5px; border-color: rgba(36, 1, 91, 0.985);
+    padding-top: 5px;
+    padding-bottom: 5px;
+    
+
+}.regvp{
+     position: absolute;
+    margin-top: 50px;
+    margin-bottom: 50px;
+    text-align: center;
+    left: 50px;
+    right:1050px;
+    font-weight: 100;
+    color:black;
+    border-style: solid;border-width: 1.5px; border-color: rgba(36, 1, 91, 0.985);
+    padding-top: 5px;
+    padding-bottom: 5px;
+}.regvp2{
+    
+        position: absolute;
+        margin-top: 50px;
+        margin-bottom: 50px;
+        text-align: center;
+        left: 430px;
+        right:370px;
+        font-weight: bolder;
+        color:black;
+        border-style: solid;border-width: 1.5px; border-color: rgba(36, 1, 91, 0.985);
+        padding-top: 5px;
+        padding-bottom: 5px;
+        
+    
+    
+}
+.regf{
+    font-size: 17px;
+    background-color: rgba(36, 1, 91, 0.985);
+    text-align: center;
+    color: aliceblue; 
+    height: 20px;
+    position:relative;
+    font-weight: 100;
+    top:540px;
+    
+}
+.ui{
+    position: relative;
+    background-color: red;
+    color: azure;
+    text-align: center;
+    padding-top: 5px 0px 5px 0px;
+    margin: 0px 550px ;
+    top:500px;
+    left: 450px;
+}
